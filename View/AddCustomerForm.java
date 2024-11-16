@@ -96,4 +96,27 @@ public class AddCustomerForm extends JFrame {
         add(txtAmount);
         add(btnPlaceOrder);
     }
+
+    public JButton getBtnBack(){
+        return btnBack;
+    }
+    public JButton getBtnPlaceOrder(){
+        return btnPlaceOrder;
+    }
+
+    public JTextField getTxtOrderId(){
+        return txtOrderId;
+    }
+    public JTextField getTxtCustId(){
+        return txtCustId;
+    }
+    public JTextField getTxtSize(){
+        return txtSize;
+    }
+    public JTextField getTxtQty(){
+        return txtQty;
+    }
+    public JTextField getTxtAmount(){
+        return txtAmount;
+    }
 }

@@ -9,6 +9,8 @@ public class CustomerModel {
     private double amount;
     private String status;
 
+    public CustomerModel(){}
+
     public CustomerModel(String orderId, String customerId, String size, int qty, double amount, String status){
         this.orderId=orderId;
         this.customerId=customerId;
