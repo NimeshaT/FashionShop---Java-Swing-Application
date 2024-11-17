@@ -42,5 +42,9 @@ public class CustomerViewForm extends JFrame{
         add(pane);
 
     }
+
+    public JButton getBtnBack(){
+        return btnBack;
+    }
     
 }

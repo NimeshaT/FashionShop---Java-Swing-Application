@@ -76,4 +76,20 @@ public class HomePageView extends JFrame{
         return btnPlaceOrder;
     }
 
+    public JButton getBtnSearch(){
+        return btnSearch;
+    }
+
+    public JButton getBtnStatus(){
+        return btnStatus;
+    }
+
+    public JButton getBtnReports(){
+        return btnReport;
+    }
+
+    public JButton getBtnDelete(){
+        return btnDelete;
+    }
+
 }

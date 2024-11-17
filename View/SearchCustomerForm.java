@@ -78,4 +78,16 @@ public class SearchCustomerForm extends JFrame{
         add(lblTotal);
         add(txtTotal);
     }
+
+    public JButton getBtnBack(){
+        return btnBack;
+    }
+
+    public JTextField getTxtCustId(){
+        return txtCustId;
+    }
+
+    public JTextField getTxtTotal(){
+        return txtTotal;
+    }
 }

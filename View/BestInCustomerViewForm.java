@@ -41,4 +41,8 @@ public class BestInCustomerViewForm extends JFrame{
         add(tblScrollPane);
 
     }
+
+    public JButton getBtnBack(){
+        return btnBack;
+    }
 }

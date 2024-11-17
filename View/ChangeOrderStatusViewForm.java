@@ -120,4 +120,8 @@ public class ChangeOrderStatusViewForm extends JFrame{
         add(txtStatus);
         add(btnChangeStatus);
     }
+
+    public JButton getBtnBack(){
+        return btnBack;
+    }
 }

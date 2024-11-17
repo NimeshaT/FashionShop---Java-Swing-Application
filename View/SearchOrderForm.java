@@ -107,5 +107,33 @@ public class SearchOrderForm extends JFrame{
         add(lblStatus);
         add(txtStatus);
     }
+
+    public JButton getBtnBack(){
+        return btnBack;
+    }
+
+    public JTextField getTxtOrderId(){
+        return txtOrderId;
+    }
+
+    public JTextField getTxtCustId(){
+        return txtCustId;
+    }
+
+    public JTextField getTxtSize(){
+        return txtSize;
+    }
+
+    public JTextField getTxtQty(){
+        return txtQty;
+    }
+
+    public JTextField getTxtAmount(){
+        return txtAmount;
+    }
+
+    public JTextField getTxtStatus(){
+        return txtStatus;
+    }
 }
 

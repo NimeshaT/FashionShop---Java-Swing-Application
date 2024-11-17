@@ -121,5 +121,9 @@ public class DeleteOrderViewForm extends JFrame{
         add(txtStatus);
         add(btnDelete);
     }
+
+    public JButton getBtnBack(){
+        return btnBack;
+    }
     
 }

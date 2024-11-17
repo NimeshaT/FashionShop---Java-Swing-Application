@@ -86,4 +86,38 @@ public class ViewForm extends JFrame{
         add(btnOdrByAmount);
         add(btnAllOrders);
     }
+
+    public JButton getBtnBack(){
+        return btnBack;
+    }
+
+    public JButton getBtnViewCust(){
+        return btnViewCust;
+    }
+
+    public JButton getBtnBestInCust(){
+        return btnBestInCust;
+    }
+
+    public JButton getBtnAllCust(){
+        return btnAllCust;
+    }
+
+    public JButton getBtnByQty(){
+        return btnByQty;
+    }
+
+    public JButton getBtnByAmount(){
+        return btnByAmount;
+    }
+
+    public JButton getBtnOrderByAmount(){
+        return btnOdrByAmount;
+    }
+
+    public JButton getBtnAllOrders(){
+        return btnAllOrders;
+    }
+
+    
 }

@@ -41,5 +41,9 @@ public class ItemQtyViewReport extends JFrame{
         add(btnBack);
         add(pane);
     }
+
+    public JButton getBtnBack(){
+        return btnBack;
+    }
     
 }

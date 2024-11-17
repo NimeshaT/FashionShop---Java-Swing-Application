@@ -1,5 +1,14 @@
 import Controller.AddCustomerController;
+import Controller.AllCustomerViewController;
+import Controller.BestInCustomerController;
+import Controller.ChangeOrderStatusController;
+import Controller.CustomerViewController;
+import Controller.DeleteOrderController;
 import Controller.HomePageController;
+import Controller.ItemByQtyController;
+import Controller.SearchCustomerController;
+import Controller.SearchOrderController;
+import Controller.ViewFormController;
 import Model.ArrayModel;
 import Model.CustomerModel;
 import Model.ValidationModel;
@@ -28,9 +37,27 @@ public class FashionShop {
 
         HomePageView home = new HomePageView();
         AddCustomerForm Addcustomer = new AddCustomerForm();
+        SearchCustomerForm searchCustomer = new SearchCustomerForm();
+        SearchOrderForm searchOrder = new SearchOrderForm();
+        ChangeOrderStatusViewForm changeStatus = new ChangeOrderStatusViewForm();
+        ViewForm form = new ViewForm();
+        DeleteOrderViewForm deleteForm = new DeleteOrderViewForm();
+        CustomerViewForm custForm = new CustomerViewForm();
+        BestInCustomerViewForm bestInCustomer = new BestInCustomerViewForm();
+        AllCustomerViewForm allCustomer = new AllCustomerViewForm();
+        ItemQtyViewReport itemByQty = new ItemQtyViewReport();
 
-        HomePageController homeController = new HomePageController(home,Addcustomer);
+        HomePageController homeController = new HomePageController(home,Addcustomer,searchCustomer,searchOrder, changeStatus, form, deleteForm);
         AddCustomerController addCustomerController = new AddCustomerController(customer,array,home,Addcustomer,validate);
+        SearchCustomerController searchCustomerController = new SearchCustomerController(searchCustomer, home);
+        SearchOrderController searchOrderController = new SearchOrderController(searchOrder, home);
+        ChangeOrderStatusController changeOrderStatusController = new ChangeOrderStatusController(home, changeStatus);
+        ViewFormController viewFormController = new ViewFormController(home, form, custForm, bestInCustomer, allCustomer, itemByQty);
+        DeleteOrderController deleteOrderController = new DeleteOrderController(deleteForm, home);
+        CustomerViewController customerViewController = new CustomerViewController(form, custForm);
+        BestInCustomerController bestInCustomerController = new BestInCustomerController(form, bestInCustomer);
+        AllCustomerViewController allCustomerViewController = new AllCustomerViewController(form, allCustomer);
+        ItemByQtyController itemByQtyController = new ItemByQtyController(form, itemByQty);
 
         home.setVisible(true);
 
@@ -38,7 +65,7 @@ public class FashionShop {
 
         //new SearchOrderForm().setVisible(true);
 
-          new ViewForm().setVisible(true);
+          //new ViewForm().setVisible(true);
 
           //new BestInCustomerViewForm().setVisible(true);
           //new CustomerViewForm().setVisible(true);
@@ -48,9 +75,9 @@ public class FashionShop {
          // new AllOrderViewForm().setVisible(true);
           //new OrderAmountViewReport().setVisible(true);
 
-          new ChangeOrderStatusViewForm().setVisible(true);
+          //new ChangeOrderStatusViewForm().setVisible(true);
 
-          new DeleteOrderViewForm().setVisible(true);
+          //new DeleteOrderViewForm().setVisible(true);
         
     }
 }

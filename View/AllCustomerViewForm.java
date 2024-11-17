@@ -45,5 +45,9 @@ public class AllCustomerViewForm extends JFrame{
         add(btnBack);
         add(scrollPane);
     }
+
+    public JButton getBtnBack(){
+        return btnBack;
+    }
     
 }
