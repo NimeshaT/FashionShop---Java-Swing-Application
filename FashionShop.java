@@ -4,9 +4,19 @@ import Model.ArrayModel;
 import Model.CustomerModel;
 import Model.ValidationModel;
 import View.AddCustomerForm;
+import View.AllCustomerViewForm;
+import View.AllOrderViewForm;
+import View.BestInCustomerViewForm;
+import View.ChangeOrderStatusViewForm;
+import View.CustomerViewForm;
+import View.DeleteOrderViewForm;
 import View.HomePageView;
+import View.ItemAmountViewReport;
+import View.ItemQtyViewReport;
+import View.OrderAmountViewReport;
 import View.SearchCustomerForm;
 import View.SearchOrderForm;
+import View.ViewForm;
 
 public class FashionShop {
 
@@ -27,5 +37,20 @@ public class FashionShop {
         //new SearchCustomerForm().setVisible(true);
 
         //new SearchOrderForm().setVisible(true);
+
+          new ViewForm().setVisible(true);
+
+          //new BestInCustomerViewForm().setVisible(true);
+          //new CustomerViewForm().setVisible(true);
+         // new AllCustomerViewForm().setVisible(true);
+          //new ItemQtyViewReport().setVisible(true);
+          //new ItemAmountViewReport().setVisible(true);
+         // new AllOrderViewForm().setVisible(true);
+          //new OrderAmountViewReport().setVisible(true);
+
+          new ChangeOrderStatusViewForm().setVisible(true);
+
+          new DeleteOrderViewForm().setVisible(true);
+        
     }
 }
